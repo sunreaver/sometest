@@ -17,10 +17,8 @@ var (
 )
 
 func init() {
-	p := flag.String("p", "36245", "port")
+	flag.StringVar(&port, "p", "36245", "port")
 	flag.Parse()
-
-	port = *p
 }
 
 func main() {
